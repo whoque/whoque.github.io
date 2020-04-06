@@ -84,12 +84,12 @@ function Circle(x, y, dx, dy, radius) {
 }
 
 let circleArray = [];
-for (let i = 0; i < 1000; i++) {
+for (let i = 0; i < 800; i++) {
   let radius = randomize(1, 10);
   let x = randomize(radius, innerWidth - radius);
   let y = randomize(radius, innerHeight - radius);
-  let dx = (Math.random() - 0.5) * 3;
-  let dy = (Math.random() - 0.5) * 3;
+  let dx = (Math.random() - 0.5) * 8;
+  let dy = (Math.random() - 0.5) * 8;
   circleArray.push(new Circle(x, y, dx, dy, radius));
 }
 
