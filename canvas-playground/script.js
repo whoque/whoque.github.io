@@ -30,8 +30,8 @@ window.addEventListener("mousemove", (e) => {
 });
 
 window.addEventListener("touchmove", (e) => {
-  mouse.x = e.x;
-  mouse.y = e.y;
+  mouse.x = e.touches[0].clientX;
+  mouse.y = e.touches[0].clientY;
 });
 
 window.addEventListener("resize", () => {
