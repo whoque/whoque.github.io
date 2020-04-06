@@ -1,4 +1,4 @@
-const maxRadius = 50;
+const maxRadius = 300;
 const colorArray = ["#3891A6", "#4C5B5C", "#FDE74C", "#DB5461", "#E3655B"];
 
 let canvas = document.querySelector("canvas");
@@ -84,7 +84,7 @@ function Circle(x, y, dx, dy, radius) {
 }
 
 let circleArray = [];
-for (let i = 0; i < 500; i++) {
+for (let i = 0; i < 1000; i++) {
   let radius = randomize(1, 10);
   let x = randomize(radius, innerWidth - radius);
   let y = randomize(radius, innerHeight - radius);
