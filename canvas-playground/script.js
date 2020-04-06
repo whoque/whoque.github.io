@@ -29,6 +29,11 @@ window.addEventListener("mousemove", (e) => {
   mouse.y = e.y;
 });
 
+window.addEventListener("touchmove", (e) => {
+  mouse.x = e.x;
+  mouse.y = e.y;
+});
+
 window.addEventListener("resize", () => {
   canvas.width = window.innerWidth;
   canvas.height = window.innerHeight;
