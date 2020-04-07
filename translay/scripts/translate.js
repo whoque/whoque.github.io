@@ -14,13 +14,6 @@ function translateFunc() {
       return response.json();
     })
     .then((data) => {
-      var par = document.createElement("p");
-      var text = document.createTextNode(
-        JSON.stringify(data) + " <<<>>>> " + language
-      );
-      par.appendChild(text);
-      document.body.appendChild(par);
-
       var translatedText = data["text"];
       document.getElementById("translateText").value = translatedText;
       speakUp();

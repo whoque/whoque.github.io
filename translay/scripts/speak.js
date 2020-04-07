@@ -30,6 +30,14 @@ function speakUp() {
   msg.pitch = 1; //$("#pitch").val();
   msg.text = text;
 
+  console.log();
+  var par = document.createElement("p");
+  var text = document.createTextNode(
+    voices.toString() + " <<<>>> " + $("#voices").val()
+  );
+  par.appendChild(text);
+  document.body.appendChild(par);
+
   msg.onend = function (e) {
     console.log("Finished in " + event.elapsedTime + " seconds.");
   };
