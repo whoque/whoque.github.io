@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Speech Recording</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <select id="listen" onchange="updateLanguage()"></select>
+        <button onclick="listenNow()">Yo</button>
+        <div>
+            <div class="form-element">
+                <input type="text" placeholder="Type here" id="translateText" required="true" />
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <select id="voices"></select>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="./scripts/listen.js"></script>
+    <script src="./scripts/translate.js"></script>
+    <script src="./scripts/speak.js"></script>
+</body>
+
+</html>
