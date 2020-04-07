@@ -13,7 +13,9 @@ function translateFunc() {
     })
     .then((data) => {
       var par = document.createElement("p");
-      var text = document.createTextNode(JSON.stringify(data));
+      var text = document.createTextNode(
+        JSON.stringify(data) + " <<<>>>> " + language
+      );
       par.appendChild(text);
       document.body.appendChild(par);
 
