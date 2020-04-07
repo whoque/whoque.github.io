@@ -1,6 +1,7 @@
 let recognition = {};
 $(document).ready(function () {
   initSpeechRecogniser();
+  loadSpeechSynthesis();
 });
 
 function initSpeechRecogniser() {

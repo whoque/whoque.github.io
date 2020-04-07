@@ -1,4 +1,4 @@
-$(function () {
+function loadSpeechSynthesis() {
   if ("speechSynthesis" in window) {
     speechSynthesis.onvoiceschanged = function () {
       var $voicelist = $("#voices");
@@ -18,7 +18,7 @@ $(function () {
   } else {
     $("#modal1").openModal();
   }
-});
+}
 
 function speakUp() {
   var text = $("#translateText").val();
