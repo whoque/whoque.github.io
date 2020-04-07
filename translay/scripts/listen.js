@@ -22,7 +22,7 @@ function initSpeechRecogniser() {
         interimTranscript += transcript;
       }
     }
-    document.getElementById("translateText").value = finalTranscript;
+    document.getElementById("reconText").value = finalTranscript;
   };
   recognition.onend = () => {
     translateFunc();
