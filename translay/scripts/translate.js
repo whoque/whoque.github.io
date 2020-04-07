@@ -1,6 +1,6 @@
 function translateFunc() {
   var inputval = document.getElementById("reconText").value;
-  var voices = window.speechSynthesis.getVoices();
+  var voices = speechSynthesis.getVoices();
   var languageCode = voices[$("#voices").val()].lang;
   var language = languageCode.split("-")[0];
   let url =

@@ -23,7 +23,7 @@ function loadSpeechSynthesis() {
 function speakUp() {
   var text = $("#translateText").val();
   var msg = new SpeechSynthesisUtterance();
-  var voices = window.speechSynthesis.getVoices();
+  var voices = speechSynthesis.getVoices();
   //   console.log(voices[$("#voices").val()]);
   msg.voice = voices[$("#voices").val()];
   msg.rate = 0.9; //$("#rate").val() / 10;
